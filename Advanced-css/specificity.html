@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* 0 0 1 */
+        li  {
+            background: linear-gradient(to left,violet,
+            indigo, blue, green, yellow, orange, rgb(36, 29, 29));
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        /* 0 1 1 */
+        li.favourite{
+            color: yellow;
+        }
+
+        /* 1 0 2 */ 
+        /* this specificity is greater than favourite specificity 102 > 011; */
+        ul#fruits li{
+            background: linear-gradient(to left,violet,
+            indigo, blue, green, yellow, orange, rgb(36, 29, 29));
+            -webkit-background-clip: text;
+            color: transparent;;
+        }
+
+        /* 1 1 2 */
+        ul#fruits li.disliked {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="fruits">
+        <li>Apple</li>
+        <li class="disliked">Orange</li>
+        <li class="favourite">Mango</li>
+        <li>Grapes</li>
+    </ul>
+</body>
+
+</html>

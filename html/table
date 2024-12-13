@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" style="border-collapse:collapse;">
+        <thead>
+            <tr>
+                <th>Student_id</th>
+                <th>first_name</th>
+                <th>last_name</th>
+                <th>psp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Joe</td>
+                <td>Doe</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mary</td>
+                <td>Jae</td>
+                <td>83</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Jim</td>
+                <td>Brown</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mac</td>
+                <td>Tyson</td>
+                <td>91</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>

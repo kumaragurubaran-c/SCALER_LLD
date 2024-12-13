@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* 0 0 1 */
+        h1{
+            color: brown;
+        }
+
+        /* 1  0  0 */
+        #headline{
+            color: aquamarine;
+        }
+        
+        /* 0 1 0 */
+        .heading {
+            color: yellowgreen;
+        }
+
+        </style>
+        <link rel="stylesheet" href="./css-priority.css">
+</head>
+<body>
+    <h1  class="heading" id="headline">This is heading</h1>
+    <p>Paragraph tag</p>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+</body>
+</html>

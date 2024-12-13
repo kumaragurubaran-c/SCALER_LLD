@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inheritance</title>
+    <style>
+        .container {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to left, violet,
+                    indigo, blue, green, yellow, orange, rgb(36, 29, 29));
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .firstchild {
+            color: initial;
+        }
+
+        .secondchild {
+            color: red;
+        }
+
+        .secondchild {
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="firstchild">firstchild</p>
+        <p class="secondchild">secondchild</p>
+        <p class="thirdchild">thirdchild</p>
+    </div>
+</body>
+
+</html>
