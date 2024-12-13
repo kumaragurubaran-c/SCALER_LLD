@@ -25,30 +25,63 @@
             flex-direction: row;
             align-items: center;
             position: fixed;
-            background-color: rgba(0,0,0,0.3);
+            background-color: rgba(0, 0, 0, 0.3);
             color: transparent;
             width: 100%;
+        }
+
+        #background {
+            position: absolute;
         }
 
         span {
             padding: 5px;
             color: whitesmoke;
         }
+
+        .content {
+            position: relative;
+            top: 550px;
+            left: 50px;
+            color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            font-size: large;
+            gap: 20px;
+        }
+
+        #details {
+            width: 10%;
+            border-radius: 10px;
+            background-color: red;
+            color: whitesmoke;
+            font-size: larger;
+            font-weight: 800;
+            padding: 10px;
+        }
     </style>
 </head>
 
 <body>
+    <img id="background"
+        src="https://images.unsplash.com/photo-1600119692885-8b04faa7f329?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==">
     <div class="header">
         <span>
             <img id="icon"
-            src="https://d1nxzqpcg2bym0.cloudfront.net/itunes_connect/845083955/9f4618b0-932c-11ef-bb21-a5060ac0b799/128x128">
+                src="https://d1nxzqpcg2bym0.cloudfront.net/itunes_connect/845083955/9f4618b0-932c-11ef-bb21-a5060ac0b799/128x128">
         </span>
         <span>
             <h3>Wynk Music</h3>
         </span>
     </div>
-    <img id="background"
-        src="https://images.unsplash.com/photo-1600119692885-8b04faa7f329?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==">
+    <div class="content">
+        <!-- <h1><b>We're passing the remote to Yo<img src="https://cdn-icons-png.flaticon.com/128/16404/16404937.png"></b> -->
+        <!-- <h1><b>We're passing the remote to <img src="https://cdn-icons-png.flaticon.com/128/6827/6827345.png">ou</b> -->
+        <h1><b>We're passing the remote to <img src="https://cdn-icons-png.flaticon.com/128/11569/11569678.png">ou</b>
+        </h1>
+        <h2>Stream over 100Million songs ad-free</h2>
+        <button id="details"><b>Know more</b></button>
+    </div>
 </body>
 
 </html>
