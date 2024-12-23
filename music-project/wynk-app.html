@@ -17,7 +17,7 @@
 
         #icon {
             height: 50px;
-            border-radius: 10px;
+            border-radius: 30px;
         }
 
         .header {
@@ -32,6 +32,8 @@
 
         #background {
             position: absolute;
+            height: 10;
+            width: 10;
         }
 
         span {
@@ -41,8 +43,6 @@
 
         .content {
             position: relative;
-            top: 550px;
-            left: 50px;
             color: whitesmoke;
             display: flex;
             flex-direction: column;
@@ -51,36 +51,51 @@
         }
 
         #details {
-            width: 10%;
+
             border-radius: 10px;
             background-color: red;
             color: whitesmoke;
             font-size: larger;
             font-weight: 800;
-            padding: 10px;
+        }
+
+        .footer {
+            display: flex;
+            position: sticky;
+            background-color: rgb(167, 157, 157);
+            color: whitesmoke;
         }
     </style>
 </head>
 
 <body>
     <img id="background"
-        src="https://images.unsplash.com/photo-1600119692885-8b04faa7f329?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==">
-    <div class="header">
-        <span>
-            <img id="icon"
-                src="https://d1nxzqpcg2bym0.cloudfront.net/itunes_connect/845083955/9f4618b0-932c-11ef-bb21-a5060ac0b799/128x128">
-        </span>
-        <span>
-            <h3>Wynk Music</h3>
-        </span>
-    </div>
-    <div class="content">
-        <!-- <h1><b>We're passing the remote to Yo<img src="https://cdn-icons-png.flaticon.com/128/16404/16404937.png"></b> -->
-        <!-- <h1><b>We're passing the remote to <img src="https://cdn-icons-png.flaticon.com/128/6827/6827345.png">ou</b> -->
-        <h1><b>We're passing the remote to <img src="https://cdn-icons-png.flaticon.com/128/11569/11569678.png">ou</b>
-        </h1>
-        <h2>Stream over 100Million songs ad-free</h2>
-        <button id="details"><b>Know more</b></button>
+        src="https://images.wallpaperscraft.com/image/single/headphones_audio_black_134032_1920x1080.jpg">
+    <div class="position">
+        <div class="header">
+            <span>
+                <img id="icon"
+                    src="https://www.siasat.com/wp-content/uploads/2024/08/airtel-wynk-music-shutdown.jpg">
+            </span>
+            <span>
+                <h3>Wynk Music</h3>
+            </span>
+        </div>
+        <div class="content">
+            <!-- <h1><b>We're passing the remote to Yo<img src="https://cdn-icons-png.flaticon.com/128/16404/16404937.png"></b> -->
+            <!-- <h1><b>We're passing the remote to <img src="https://cdn-icons-png.flaticon.com/128/6827/6827345.png">ou</b> -->
+            <h1><b>We're passing the remote to <img
+                        src="https://cdn-icons-png.flaticon.com/128/11569/11569678.png">ou</b>
+            </h1>
+            <h2>Stream over 100Million songs ad-free</h2>
+            <button id="details"><b>Details</b></button>
+        </div>
+        <div class="footer">
+            <h3>PRIVACY POLICY</h3>
+            <h3>TERMS OF USE</h3>
+            <h3>CONTACT US</h3>
+            <h3>HELLO TUNES</h3>
+        </div>
     </div>
 </body>
 

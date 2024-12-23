@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wynk</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .layout {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding-left: 10%;
+        }
+
+        .header {
+            display: flex;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: transparent;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+            height: 10vh;
+        }
+
+        .footer {
+            display: flex;
+            position: relative;
+            top: 95vh;
+            height: 10vh;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: transparent;
+            align-items: center;
+        }
+
+        #icon {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        #details {
+            border-radius: 10px;
+            background-color: red;
+            color: whitesmoke;
+            padding: 0.5rem;
+            font-size: larger;
+            font-weight: 800;
+        }
+
+        #background {
+            position: absolute;
+            width: 100%;
+        }
+
+        .content {
+            position: relative;
+            top: 40vh;
+            width: 100%;
+        }
+
+        .vl {
+            border: 2px solid whitesmoke;
+            height: 20px;
+            display: flex;
+        }
+
+        .box {
+            height: 6vh;
+            width: 6vw;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            justify-content: center;
+            background-image: linear-gradient(180deg, #ff8d76 0, #ff0c55);
+            color: rgba(255, 255, 255, var(--tw-text-opacity));
+        }
+
+        span {
+            color: whitesmoke;
+        }
+
+        h1 {
+            color: whitesmoke;
+        }
+
+        h2 {
+            color: whitesmoke;
+        }
+
+        h3 {
+            color: whitesmoke;
+        }
+
+        #rights {
+            position: relative;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="background" src="https://images.wallpaperscraft.com/image/single/headphones_red_audio_123575_1280x800.jpg">
+    <div class="layout">
+        <div class="header">
+            <span>
+                <img id="icon"
+                    src="https://images.sftcdn.net/images/t_app-icon-s/p/ba0622f2-9a66-11e6-a5ba-00163ed833e7/3730250135/wynk-music-logo">
+            </span>
+            <span>
+                <h3>Wynk Music</h3>
+            </span>
+        </div>
+        <div class="content">
+            <h1><b>We're passing the remote to <img
+                        src="https://cdn-icons-png.flaticon.com/128/11569/11569678.png">ou</b>
+            </h1>
+            <h2>Stream over 100Million songs ad-free</h2>
+            <div class="box">
+                <a style="text-decoration: none;"
+                    href="https://wynk.in/music/list/new-releases/amhyb_vnow19351643796144680" target="_blank">
+                    <h3>DETAILS</h3>
+                </a>
+            </div>
+        </div>
+        <div class="footer">
+            <h3>PRIVACY POLICY</h3>
+            <div class="vl"></div>
+            <h3>TERMS OF USE</h3>
+            <div class="vl"></div>
+            <h3>CONTACT US</h3>
+            <div class="vl"></div>
+            <h3>HELLO TUNES</h3>
+        </div>
+        <!-- <p id="rights">2024 © All rights reserved | Airtel Digital Limited</p> -->
+    </div>
+</body>
+
+</html>
