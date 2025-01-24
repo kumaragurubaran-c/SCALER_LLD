@@ -24,7 +24,7 @@ const ind = {
 ind.sayHi();
 
 let microsoft = {
-    // name : "MS",
+    name : "MS",
     ms : () => {
         console.log("microsoft obj", this); //MS Window
     }

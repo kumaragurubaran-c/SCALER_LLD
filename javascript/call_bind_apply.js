@@ -21,10 +21,15 @@ const aboutMe = {
     team: "FB"
 }
 
+const myInfo = {
+    cheif: "Captain Jack",
+    team: "to your team"
+}
+
 justiceLeague.league.call(resume,"Guru","Service based Company");
 justiceLeague.league.apply(aboutMe,["Guru","Service based Company"]);
 
-const info = justiceLeague.league.bind(resume);
+const info = justiceLeague.league.bind(myInfo);
 info("Guru","Service based Company");
 
 
