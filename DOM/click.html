@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click and Append</title>
+</head>
+
+<body>
+    <h1>Click and Append</h1>
+    <input type="text" value="user_input">
+    <button>append</button>
+    <ul></ul>
+</body>
+<script>
+    const iput = document.querySelector("input");
+    const btn = document.querySelector("button");
+    const ulist = document.querySelector("ul");
+    btn.addEventListener("click", () => {
+        if (iput.value.length > 0) {
+            const liTag = document.createElement("li")
+            liTag.innerText = iput.value;
+            ulist.appendChild(liTag);
+        }
+    })
+
+</script>
+
+</html>

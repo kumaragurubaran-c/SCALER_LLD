@@ -1,0 +1,35 @@
+.container {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    height: 90vh;
+}
+
+tbody {
+    font-size: 2rem;
+    align-items: center;
+    border: black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(255, 255, 255, 0.8);
+}
+
+#ddown {
+    height: 3rem;
+    width: 7rem;
+    border-radius: 2rem;
+    text-align: center;
+    appearance: none;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+}
+
+.yellow {
+    background-color: yellow!important;
+}
+
+.reset{
+    height: 3rem;
+    width: 7rem;
+    border-radius: 2rem;
+    text-align: center;
+    appearance: none;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+}

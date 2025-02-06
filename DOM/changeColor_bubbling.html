@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On click change color</title>
+</head>
+<style>
+    .box {
+        height: 20rem;
+        width: 15rem;
+        border-radius: 5px;
+        border: 2px solid black;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    .aqua {
+        margin: 0.5rem;
+        border: 2px solid black;
+        cursor: pointer;
+        background: whitesmoke;
+    }
+
+    .aquamarine {
+        margin: 0.5rem;
+        border: 2px solid black;
+        cursor: pointer;
+        background: whitesmoke;
+    }
+
+    .cadetblue {
+        margin: 0.5rem;
+        border: 2px solid black;
+        cursor: pointer;
+        background: whitesmoke;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="aqua">aqua</div>
+        <div class="aquamarine">aquamarine</div>
+        <div class="cadetblue">cadetblue</div>
+    </div>
+</body>
+<script>
+    const aqua = document.querySelector(".aqua");
+    const aquamarine = document.querySelector(".aquamarine");
+    const cadetblue = document.querySelector(".cadetblue");
+    const box = document.querySelector(".box");
+
+    aqua.addEventListener("click", (e) => {
+        // console.log("aqua is clicked", e.currentTarget);
+        console.log(e.currentTarget.innerText);
+    });
+    aquamarine.addEventListener("click", (e) => {
+        // console.log("aquamarine is clicked", e.currentTarget);
+        console.log(e.currentTarget.innerText);
+    });
+    cadetblue.addEventListener("click", (e) => {
+        // console.log("cadetblue is clicked", e.currentTarget);
+        console.log(e.currentTarget.innerText);
+    });
+
+    box.addEventListener("click", (e) => {
+        console.log("box color inherting", e.target);
+        const colored = e.target.innerText;
+        // if (background === "cadetblue") {
+        //     box.style.background = "#2ecc71";
+        // }
+        // if (e.target.innerText === "aquamarine") {
+        //     box.style.background = "#85c1e9";
+        // }
+        // if (e.target.innerText === "aqua") {
+        //     box.style.background = "#ec7063";
+        // }
+        box.style.background = colored;
+    });
+
+</script>
+
+</html>

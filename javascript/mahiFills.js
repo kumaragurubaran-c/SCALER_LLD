@@ -26,6 +26,8 @@ Function.prototype.connect = function (leadObj, ...params) {
     delete leadObj.expectedFn;
 }
 
+me.obssesed.connect(pickYouUp,...['heart','beyond']);
+
 /*-------------------apply------------------- */
 
 const destination = {

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <p class="para">para tag</p>
+        <h5 id="htag">Lorem ipsum dolor sit amet.</h5>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h2 class="htag2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+        <p id="p2"> para2 tag</p>
+    </div>
+</body>
+
+<script>
+    const val = document.querySelector("p");
+    // console.log(val);
+    const val2 = document.querySelector(".para");
+    console.log(val2.textContent);
+    const h2val = document.querySelectorAll("hgroup");
+    // console.log(h2val);
+    const p2val = document.querySelector("#p2");
+    console.log("p2val",p2val.innerHTML);
+    const htag = document.querySelector("h1");
+    console.log(htag.innerText);
+</script>
+
+</html>

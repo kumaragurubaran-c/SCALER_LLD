@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id ="textInput">
+    <p id="pTag">Hey, How ya doin'!!!</p>
+    <p>all good, How ya doin'!!!</p>
+    <button>CLICK</button>
+</body>
+<script>
+    const select = document.querySelector("#textInput");
+    console.log(select.getAttribute("type"));
+    select.setAttribute("custom","property")
+    const pT = document.querySelector("p");
+    pT.setAttribute("name","pTag");
+    pT.style.color = "red";
+</script>
+</html>

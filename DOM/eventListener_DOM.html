@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+    .movies {
+        height: 10rem;
+        width: 10rem;
+        margin: 2rem;
+        text-align: center;
+        display: inline-block;
+        border: 2px solid black;
+    }
+
+    .price {
+        background-color: red;
+        padding: 1.5rem;
+    }
+
+    h3 {
+        margin: 0;
+        background-color: black;
+        height: 2.5rem;
+        color: whitesmoke;
+    }
+
+    p {
+        margin: 0;
+        padding: 1.9rem;
+        height: 3.5rem;
+    }
+</style>
+
+<body>
+    <h1>BOOK MY SHOW</h1>
+    <select name="dd">
+        <option value="none">None</option>
+        <option value="action">Action</option>
+        <option value="romance">Romance</option>
+        <option value="comedy">Comedy</option>
+    </select>
+    <div class="movies">
+        <h3 class="heading">Example 1</h3>
+        <p>Comedy</p>
+        <p class="price">Rs 200</p>
+    </div>
+    <div class="movies">
+        <h3 class="heading">Example 2</h3>
+        <p>Action</p>
+        <p class="price">Rs 400</p>
+    </div>
+    <div class="movies">
+        <h3 class="heading">Example 3</h3>
+        <p>Romance</p>
+        <p class="price">Rs 500</p>
+    </div>
+    <div class="movies">
+        <h3 class="heading">Example 4</h3>
+        <p>Comedy</p>
+        <p class="price">Rs 200</p>
+    </div>
+    <div class="movies">
+        <h3 class="heading">Example 5</h3>
+        <p>Romance</p>
+        <p class="price">Rs 500</p>
+    </div>
+    <div class="movies">
+        <h3 class="heading">Example 6</h3>
+        <p>Romance</p>
+        <p class="price">Rs 500</p>
+    </div>
+    <div class="movies">
+        <h3 class="heading">Example 7</h3>
+        <p>Comedy</p>
+        <p class="price">Rs 200</p>
+    </div>
+    <div class="movies">
+        <h3 class="heading">Example 8</h3>
+        <p>Action</p>
+        <p class="price">Rs 400</p>
+    </div>
+    <div class="movies">
+        <h3 class="heading">Example 9</h3>
+        <p>Comedy</p>
+        <p class="price">Rs 200</p>
+    </div>
+    <div class="movies">
+        <h3 class="heading">Example 10</h3>
+        <p>Comedy</p>
+        <p class="price">Rs 200</p>
+    </div>
+    <div class="movies">
+        <h3 class="heading">Example 11</h3>
+        <p>Action</p>
+        <p class="price">Rs 400</p>
+    </div>
+    <div class="movies">
+        <h3 class="heading">Example 12</h3>
+        <p>Romance</p>
+        <p class="price">Rs 500</p>
+    </div>
+    <div class="movies">
+        <h3 class="heading">Example 14</h3>
+        <p>Romance</p>
+        <p class="price">Rs 500</p>
+    </div>
+</body>
+<script>
+    const dd = document.querySelector("select");
+    dd.addEventListener("change", (event) => {
+        const val = event.target.value;
+        const divs = document.querySelectorAll(".movies");
+        divs.forEach((ele) => {
+            const paraCard = ele.querySelector("p").innerText;
+            if (val.toLowerCase() === "none") {
+                ele.style.display = "block";
+            }
+            else if (val.toLowerCase() === paraCard.toLowerCase()) {
+                ele.style.display = "block";
+            } else {
+                ele.style.display = "none";
+            }
+        })
+    });
+</script>
+
+</html>
