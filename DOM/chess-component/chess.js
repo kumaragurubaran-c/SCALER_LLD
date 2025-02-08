@@ -82,8 +82,6 @@ tb.addEventListener("click", (e) => {
     if (Object.keys(pathStorage).length > 1) {
         for (let i = 0; i < td.length; i++) {
             console.log(td[i].innerText);
-            console.log(Object.keys(pathStorage).length);
-
             if (pathStorage[td[i].innerText] === true) {
                 td[i].classList.add("yellow");
             }
