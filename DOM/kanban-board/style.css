@@ -27,7 +27,7 @@ li {
 .palletes {
     height: 60%;
     width: 18rem;
-    background-color: #FFFFFF;
+    background-color :whitesmoke;
     margin-left: 5rem;
     display: flex;
     justify-content: space-evenly;
