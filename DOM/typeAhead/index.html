@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+
+<body>
+    <div class="autoComplete">
+        <h2>AutoComplete / TypeAhead Search</h2>
+        <label for="search_input">Search for a Country:</label>
+        <input type="text" class="search_input" id="search_input" placeholder="Start Typing..." />
+        <ul id="suggestion_box" class="suggestion_box"></ul>
+        <p id="no_results" class="no_results">No Countries Found</p>
+    </div>
+</body>
+<script src="./typeAhead.js" type="module"></script>
+<script src="./filedata.js" type="module"></script>
+
+</html>
