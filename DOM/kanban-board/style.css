@@ -5,6 +5,11 @@
     --yellow: #FFBF00;
 }
 
+
+body {
+    margin: 0px;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -27,7 +32,8 @@ li {
 .palletes {
     height: 60%;
     width: 18rem;
-    background-color :whitesmoke;
+    border-radius: 10px;
+    background-color: whitesmoke;
     margin-left: 5rem;
     display: flex;
     justify-content: space-evenly;
@@ -68,6 +74,7 @@ li {
     justify-content: space-evenly;
     align-items: center;
     margin-left: 5rem;
+    border-radius: 10px;
 }
 
 .add-btn, .remove-btn {
@@ -104,39 +111,48 @@ li {
     font-weight: 600;
 }
 
-.lock-unlock{
-position: absolute;
-bottom: 0.7rem;
-right: 0.9rem;
-font-size: 1.25rem;
+.lock-unlock {
+    position: absolute;
+    bottom: 0.7rem;
+    right: 0.9rem;
+    font-size: 1.25rem;
 }
 
-.modal_content{
+.modal_content {
     height: 50vh;
     width: 50vw;
     position: fixed;
     left: 25vw;
     top: 10vw;
-    box-shadow: 10px 10px 40px -4px rgba(0,0,0,0.7);
+    box-shadow: 10px 10px 40px -4px rgba(0, 0, 0, 0.7);
     display: flex;
+    border-radius: 10px;
+    display: none;
 }
 
-.text-area-cont{
+.text-area-cont {
     width: 75%;
     font-size: 2rem;
     padding: 2rem;
+    border-radius: 10px;
     border: none;
     outline: none;
     resize: none;
     overflow: auto;
 }
 
-.priority-color-cont{
+.ticket-area{
+    outline: none;
+}
+
+.priority-color-cont {
     background-color: #C0C0C0;
     height: 100%;
     width: 25%;
     display: flex;
     flex-direction: column;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -144,4 +160,12 @@ font-size: 1.25rem;
 .priority-color {
     height: 3rem;
     width: 5rem;
+}
+
+i{
+    cursor: pointer;
+}
+
+.active {
+    border: 0.6rem solid whitesmoke;
 }

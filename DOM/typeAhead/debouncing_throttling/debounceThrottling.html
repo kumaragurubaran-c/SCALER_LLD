@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        width: 8vw;
+        height: 1.5rem;
+        border-radius: 10px;
+    }
+    h2{
+        color: whitesmoke;
+        background-color: dimgrey;
+    }
+    span{
+        font-size: 2rem;
+    }
+    .space{
+        gap: 0.5rem;
+    }
+</style>
+<body>
+    <input type="text">
+    <div class="space" style="display: flex; align-items: center;text-align: center;">
+        <h2>Default:</h2>
+        <span id="default"></span>
+    </div>
+    <div class="space" style="display: flex; align-items: center;text-align: center;">
+        <h2>Debouncing:</h2>
+        <span id="debounce"></span>
+    </div>
+    <div class="space" style="display: flex; align-items: center;text-align: center;">
+        <h2>Throttling:</h2>
+        <span id="throttle"></span>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
