@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./tickets.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<body>
+
+    <div class="header">
+        <div class="color_pallete">
+            <div class="colors fire"></div>
+            <div class="colors land"></div>
+            <div class="colors water"></div>
+            <div class="colors earth"></div>
+        </div>
+        <div class="action_btn">
+            <div class="add">
+                <i class="fa-solid fa-square-plus"></i>
+            </div>
+            <div class="delete">
+                <i class="fa-solid fa-trash"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="main_cont">
+        <div class="heading_cont">
+            <h2 class="task_heading--pending">Pending</h2>
+            <h2 class="task_heading--finished">Finished</h2>
+        </div>
+        <div class="container_wrapper">
+            <div class="pending-cont container"></div>
+            <div class="finished-cont container"></div>
+        </div>
+    </div>
+
+    <div class="main-content">
+         <!-- <div class="ticket-container">
+            <div class="ticket-header lightSlateGray"></div>
+            <div class="ticket-id">id</div>
+            <div class="ticket-info">task info</div>
+            <div class="ticket-lock">
+                <i class="fa-solid fa-lock" id="lock"></i>
+            </div>
+        </div> -->
+    </div>
+    <div class="modal-content">
+        <div class="text-area">
+            <textarea name="" id="task-content" placeholder="ENTER YOUR TEXT HERE"></textarea>
+        </div>
+        <div class="ticket-priority">
+            <div class="ticket-colors fire"></div>
+            <div class="ticket-colors land"></div>
+            <div class="ticket-colors water"></div>
+            <div class="ticket-colors earth"></div>
+        </div>
+    </div>
+</body>
+<script src="./tickets.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"
+    crossorigin="anonymous"></script>
+
+</html>
