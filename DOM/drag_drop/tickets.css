@@ -19,10 +19,15 @@ body {
 }
 
 .color_pallete {
+    height: 6.5vh;
+    width: 30vw;
+    border-radius: 7px;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-left: 10rem;
     gap: 10px;
+    background-color: white;
 }
 
 .action_btn {
@@ -47,8 +52,8 @@ body {
 }
 
 .colors {
-    height: 6vh;
-    width: 7vw;
+    height: 5vh;
+    width: 6.5vw;
     border-radius: 7px;
     cursor: pointer;
 }
@@ -86,7 +91,8 @@ body {
 }
 
 .pending-cont{
-    border-right: 3px solid black;
+    border-right: 5px solid black;
+    height: 25vh;
     width: 70%;
     display: flex;
     justify-content: space-evenly;
@@ -103,6 +109,7 @@ body {
 }
 
 .container_wrapper{
+    height: 50vh;
     display: flex;
 }
 
