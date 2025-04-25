@@ -16,9 +16,10 @@ const myflat = function (arr) {
 
 const arr = [1, 2, 3, [4, [5, 6]], [7, 8], 9];
 const res = myflat(arr);
-//   console.log(arr);
-// console.log(res);
+  console.log("arr ", arr);
+console.log("res ", res);
 
-const arry = [1, 2, 3, [4, [5, 6]], [7, 8], 9];
-const flattened = arry.flat(Infinity);
-console.log(flattened);
+// alternative approach for flattening array.
+// const arry = [1, 2, 3, [4, [5, 6]], [7, 8], 9];
+// const flattened = arry.flat(Infinity);
+// console.log(flattened);

@@ -29,23 +29,25 @@ const obj = {
   },
 };
 
+obj.obj3.obj4.two = 4;
+
 console.log(flattenObject(obj));
 
 
-function flattenObject(ob) {
-  // Write your solution here ========================
-  let result = {};
-  function recursiveCall(ob, prefix = '') {
-    for (let key in ob) {
-      let newKey = prefix ? `${prefix}.${key}` : key;
-      if (typeof ob[key] === 'object' && ob[key] !== null) {
-        Object.assign(result, flattenObject(ob[key]))
-      } else {
-        result[newKey] = ob[key];
-      }
-    }
-  }
-  recursiveCall(ob, '')
-  return result;
-}
+// function flattenObject(ob) {
+//   // Write your solution here ========================
+//   let result = {};
+//   function recursiveCall(ob, prefix = '') {
+//     for (let key in ob) {
+//       let newKey = prefix ? `${prefix}.${key}` : key;
+//       if (typeof ob[key] === 'object' && ob[key] !== null) {
+//         Object.assign(result, flattenObject(ob[key]))
+//       } else {
+//         result[newKey] = ob[key];
+//       }
+//     }
+//   }
+//   recursiveCall(ob, '')
+//   return result;
+// }
 

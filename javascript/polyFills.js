@@ -85,3 +85,30 @@ const cap = {
     };
   };
 
+
+  // ---------------*understanding polyfills prototype*--------------------
+
+/*
+  ironman = {
+    fn :'1',
+    ln : '2'
+  }
+
+  cap = {
+    fn : '3',
+    ln : '4',
+    capFunc : function(){
+      this;
+    }
+  }
+
+  cap.capFunc.call(ironman,...)
+
+  ironman = {
+    fn: '1',
+    ln: '2',
+    requiredFn:this
+  }
+
+  ironman.requiredFn();
+  */

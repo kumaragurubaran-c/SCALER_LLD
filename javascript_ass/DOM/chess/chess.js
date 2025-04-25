@@ -2,10 +2,6 @@ const board = document.querySelector(".board");
 const row = document.querySelectorAll(".row");
 const cb = document.querySelectorAll(".checkbox");
 
-
-
-
-
 document.querySelector('.board').addEventListener('click', (e) => {
     Array.from(document.querySelectorAll('.checkbox')).map(el => {
         if (el.style.backgroundColor == 'red') {

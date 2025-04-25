@@ -5,6 +5,10 @@
     height: 90vh;
 }
 
+td{
+    cursor: grab;
+}
+
 tbody {
     font-size: 2rem;
     align-items: center;

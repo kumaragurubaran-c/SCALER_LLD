@@ -9,25 +9,25 @@ const justiceLeague = {
     }
 }
 
-justiceLeague.league("Joker","Myself");
+// justiceLeague.league("Joker","Myself");
 
 const resume = {
     cheif: "Jeff",
     team: "Amazon"
 }
 
-const aboutMe = {
-    cheif: "Zuckerberg",
-    team: "FB"
-}
+// const aboutMe = {
+//     cheif: "Zuckerberg",
+//     team: "FB"
+// }
 
 const myInfo = {
     cheif: "Captain Jack",
     team: "to your team"
 }
 
-justiceLeague.league.call(resume,"Guru","Service based Company");
-justiceLeague.league.apply(aboutMe,["Guru","Service based Company"]);
+// justiceLeague.league.call(resume,"Guru","Service based Company");
+// justiceLeague.league.apply(aboutMe,["Guru","Service based Company"]);
 
 const info = justiceLeague.league.bind(myInfo);
 info("Guru","Service based Company");
